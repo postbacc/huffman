@@ -1,0 +1,12 @@
+{
+    "points": [
+        { "create leaf": 1 },
+        { "create internal" : 1 },
+        { "count symbols": 1 },
+        { "load queue": 2 },
+        { "build tree": 4 },
+        { "encode table": 3 },
+        { "encode": 4 },
+        { "decode": 4 }
+    ]
+}
