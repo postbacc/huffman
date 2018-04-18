@@ -30,7 +30,7 @@ TEST_CASE("Huffman: create leaf frequency node", "[create leaf]") {
   REQUIRE(n->count == 99);
   REQUIRE(n->left == NULL);
   REQUIRE(n->right == NULL);
-  REQUIRE(n->is_leaf == TRUE);
+  REQUIRE(n->is_leaf);
 }
 
 TEST_CASE("Huffman: create internal frequency node", "[create internal]") {
