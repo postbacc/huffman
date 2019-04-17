@@ -111,11 +111,14 @@ It will also help you in a couple places to use string streams.
 ```c++
 // be sure to include the header
 #include <sstream>
+#include <iostream>
 
-std::stringstream fake; // make a new string stream for a fake file
+using namespace std;
+
+stringstream fake; // make a new string stream for a fake file
 fake << "this is fake file data!"; 
 char ch; // make a landing spot for reading characters
-while (in >> noskipws >> ch) { // read a character into ch, and don't skip whitespace.
+while (fake >> noskipws >> ch) { // read a character into ch, and don't skip whitespace.
   // do something with ch
 }
 cout << fake.str(); // this is how you get a string from a stringstream
